@@ -1,0 +1,22 @@
+.draggable {
+    cursor: grab;
+  }
+  
+  .draggable.dragging {
+    opacity: 0.5;
+  }
+  
+  .drop-area {
+    transition: background-color 0.2s;
+  }
+  
+  .drop-area.drag-over {
+    background-color: #e8f5e9;
+    border: 2px dashed #4caf50;
+  }
+  
+  .drag-ghost {
+    position: absolute;
+    top: -1000px;
+    opacity: 0;
+  }

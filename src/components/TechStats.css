@@ -1,0 +1,115 @@
+.tech-stats-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .tech-stats-container h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .chart-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .chart-btn {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .chart-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .chart-btn.active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+  }
+  
+  .chart-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    margin: 30px 0;
+  }
+  
+  .stats-list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .list-headers {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 10px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+  }
+  
+  .tech-stat-item {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+  }
+  
+  .tech-name {
+    font-weight: 500;
+  }
+  
+  .tech-votes {
+    text-align: center;
+  }
+  
+  .percentage-bar-container {
+    position: relative;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .percentage-bar {
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .tech-percentage {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: 500;
+    z-index: 1;
+  }
+  
+  @media (max-width: 600px) {
+    .chart-controls {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .chart-btn {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
